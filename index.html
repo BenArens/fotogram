@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Fotogram</title>
+    <script src="./script.js"></script>
+</head>
+<body id="body" onload="loadImages()">
+    <header>
+      <div class="content"><img src="./img/Fotogram_Logo.svg" alt="Logo Fotogram"></div>  
+    </header>
+    <section class="aot">
+        <h1>Mein persönliches Fotoalbum</h1>
+        <div id="img_container" class="img-container" >
+            
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+
+        
+        <img src="./img/developer-akademie-logo.svg" alt="developer-akademie-logo">
+        <p>© 2025 Fotogram. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <div id="dialog" class="dialog hide"  onclick="closeDialog()">
+         <div class="popup" onclick="closeProtection(event)">
+            <div class="zaehler">Foto <span id="number-field"></span></div>
+
+            <div id="load_image">
+
+            </div>
+
+            
+            <img class="forward-button" src="./img/forward.svg" alt="vorwärts" onclick="forward()">
+            <img class="backward-button" src="./img/backward.svg" alt="zurück" onclick="backward()">
+            <img class="close-button" src="./img/close.svg" alt="close" onclick="closeDialog()">
+            
+            
+        </div>
+    </div>
+       
+
+</body>
+</html>
